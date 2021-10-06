@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow2</class>
+ <widget class="QMainWindow" name="MainWindow2">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1327</width>
+    <height>722</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>DES ENCRYPT</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="15" column="4" colspan="2">
+     <widget class="QLabel" name="label_7">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Kết quả phép hoán vị P:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="4">
+     <widget class="QLabel" name="lb_key">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Kr1</string>
+      </property>
+     </widget>
+    </item>
+    <item row="19" column="0" colspan="4">
+     <widget class="QLineEdit" name="L_1">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="19" column="4" colspan="4">
+     <widget class="QLineEdit" name="R_1">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="4" colspan="2">
+     <widget class="QLabel" name="label_5">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Kết quả cộng khoá vòng:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="21" column="6">
+     <widget class="QPushButton" name="But_VKT">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Chuyển sang vòng kế tiếp</string>
+      </property>
+     </widget>
+    </item>
+    <item row="21" column="0">
+     <widget class="QPushButton" name="But_MRNP">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="acceptDrops">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string>Mở rộng nửa phải</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0" colspan="4">
+     <widget class="QLabel" name="lb_l0">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>L0</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="4" colspan="4">
+     <widget class="QLabel" name="lb_r0">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>R0</string>
+      </property>
+     </widget>
+    </item>
+    <item row="16" column="4" colspan="4">
+     <widget class="QLineEdit" name="hoanvi_kq">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="13" column="4" colspan="4">
+     <widget class="QLineEdit" name="Sbox_kq">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="4" colspan="4">
+     <widget class="QLineEdit" name="khoa_vong">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="10" column="4" colspan="4">
+     <widget class="QLineEdit" name="add_kq">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="4" colspan="4">
+     <widget class="QLineEdit" name="R_0">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="18" column="4" colspan="4">
+     <widget class="QLabel" name="lb_r1">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>R1</string>
+      </property>
+     </widget>
+    </item>
+    <item row="18" column="0" colspan="4">
+     <widget class="QLabel" name="lb_l1">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>L1</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0" colspan="4">
+     <widget class="QLineEdit" name="L_0">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="4" colspan="4">
+     <widget class="QLineEdit" name="open_kq">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="21" column="2">
+     <widget class="QPushButton" name="But_TSB">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Thay thế các S-box</string>
+      </property>
+     </widget>
+    </item>
+    <item row="21" column="3">
+     <widget class="QPushButton" name="But_HVP">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Thực hiện hoán vị P</string>
+      </property>
+     </widget>
+    </item>
+    <item row="21" column="1">
+     <widget class="QPushButton" name="But_CKV">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Cộng khoá vòng</string>
+      </property>
+     </widget>
+    </item>
+    <item row="17" column="5" colspan="2">
+     <widget class="QPushButton" name="But_plus2">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>+</string>
+      </property>
+     </widget>
+    </item>
+    <item row="11" column="5" colspan="2">
+     <widget class="QPushButton" name="But_Sbox">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Thế bởi các S-box</string>
+      </property>
+     </widget>
+    </item>
+    <item row="14" column="5" colspan="2">
+     <widget class="QPushButton" name="But_P">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>P</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="4" colspan="2">
+     <widget class="QLabel" name="label_3">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Kết quả phép mở rộng:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="12" column="4" colspan="2">
+     <widget class="QLabel" name="label_6">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Kết quả thế S-box</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="5" colspan="2">
+     <widget class="QPushButton" name="But_plus1">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>+</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="5" colspan="2">
+     <widget class="QPushButton" name="But_E">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>E</string>
+      </property>
+     </widget>
+    </item>
+    <item row="21" column="7">
+     <widget class="QPushButton" name="But_HVIP_1">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Chuyển sang hoán vị IP-1</string>
+      </property>
+     </widget>
+    </item>
+    <item row="21" column="4" colspan="2">
+     <widget class="QPushButton" name="But_MHNT_XDNCL">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Mã hoá nửa trái và xác định nửa còn lại</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1327</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
